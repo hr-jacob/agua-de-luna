@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agua de Luna</title>
+  <meta charset="UTF-8">
+  <title>Imagen Pantalla Completa</title>
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover; /* evita que se deforme */
+      display: block;    /* quita espacios extra */
+    }
+  </style>
 </head>
 <body>
-    <img src="background.png" alt="agua de luna imagen">
+
+  <img src="background.png" alt="Imagen completa">
+
 </body>
 </html>
