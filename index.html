@@ -13,24 +13,27 @@
     }
 
     body {
-      min-height: 100dvh; /* viewport REAL en móviles */
+      min-height: 100svh; /* viewport seguro en iOS */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f3e6d6; /* color del fondo de la imagen */
     }
 
-    .hero {
-      width: 100%;
-      min-height: 100dvh;
-      background-image: url("comingsoon.png");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: contain; /* 🔑 CAMBIO CLAVE */
-      background-color: #f3e6d6; /* color de fondo si sobra espacio */
+    img {
+      max-width: 100%;
+      max-height: 100svh;
+      height: auto;
+      width: auto;
+      display: block;
     }
   </style>
 </head>
 
 <body>
-  <div class="hero"></div>
+  <img src="comingsoon.png" alt="Coming Soon">
 </body>
 </html>
+
 
 
